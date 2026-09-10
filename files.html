@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>files.html</title>
+  </head>
+  <body dir="rtl">
+    <div id="header-placeholder"></div>
+
+    <main class="products-page">
+      <div class="container">
+        <h2 class="page-title">المستلزمات المكتبية</h2>
+        <p class="page-subtitle">كل ال بتحلم بيه وتدور عليه في مكان واحد</p>
+
+        <div class="products-grid" id="productsContainer"></div>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

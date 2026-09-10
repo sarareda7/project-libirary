@@ -1,0 +1,554 @@
+body {
+ background-color: #f8fafc;
+ color: #1e293b;
+ line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+header .name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .name img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+header .name h1 {
+    font-size: 25px;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+header .sections ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+header .sections ul li {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}  
+header .sections ul li a {
+  color: #475569;
+  text-decoration: none;
+}
+header .sections ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
+}
+header .sections ul li:hover::after {
+  width: 100%;
+}
+header .sections ul li:hover {
+  color: #2563eb;
+  cursor: pointer;
+}
+header .chat-us {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .chat-us:hover {
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.9)
+}
+.landing {
+  padding: 30px 50px;
+  text-align: center;
+  width: 98%;
+  height: 450px;
+  background-image: url(images/libirary/bannar.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+  margin: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.landing .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.landing p {
+  color: #475569;
+  font-size: 27px;
+  letter-spacing: 1.0px;
+  font-weight: bold;
+  line-height: 2.0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  text-align: start;
+  padding: 40px;
+  width: fit-content;
+  margin-right: auto;
+}
+.landing .discover-btn {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8, #3b82f6, #2563eb);
+  background-size: 300%;
+  color: #ffffff;
+  border: none;
+  padding: 20px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+  text-decoration: none;
+}
+.landing .discover-btn:hover {
+  animation: gradientMove 0.5s linear infinite;
+}
+@keyframes gradientMove {
+ 0% {background-position: 0%;}
+ 100%{background-position: 100%;}
+}
+/* .landing .img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
+
+.about {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 12px;
+  text-align:center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.about h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+.about p {
+  color: #475569;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 2.0;
+  letter-spacing: 2.5px;
+}
+.all-sections {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.all-sections > h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+
+  grid-column: span 3;
+}
+.all-sections .box {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-top: 4px solid #2563eb;
+  transition: tranform 0.3s ease, box-shadow 0.3s ease;
+}
+.all-sections .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+}
+.all-sections .box h3 {
+  color: #1e3a8a;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.all-sections .box img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+.contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact-info p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+.contact-info img {
+  width: 130px;
+  height: 130px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 5px;
+  object-fit: contain;
+}
+.copyright {
+  border-top: 1px solid #1e293b;
+  margin-top: 30px;
+  padding-top: 15px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/*scroll btn*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+#scrollToTopBtn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* school-tools*/
+.products-page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 70vh;
+}
+.products-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.page-subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+.product-card {
+  background:#ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  padding: 15px;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.product-card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.product-desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+.add-to-cart {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+.add-to-cart:hover {
+  background-color: #2980b9;
+}
+
+.cart-button {
+  background: #27ae60;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.cart-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(360px, 90vw);
+  height: 100vh;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transform: translateX(-105%);
+  transition: transform 0.25s ease;
+  direction: rtl;
+}
+.cart-panel.open { transform: translateX(0); }
+.cart-header { display: flex; justify-content: space-between; align-items: center; }
+.cart-header button { background: none; border: 0; font-size: 1.8rem; cursor: pointer; }
+.cart-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eee; }
+.cart-item > div:first-child { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.cart-item strong { overflow-wrap: anywhere; }
+.cart-item-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.quantity-button, .remove-item { border: 0; border-radius: 4px; cursor: pointer; }
+.quantity-button { width: 28px; height: 28px; background: #e2e8f0; color: #1e293b; font-size: 1.1rem; }
+.remove-item { padding: 5px 7px; background: #fee2e2; color: #b91c1c; }
+.cart-total { margin-top: 16px; padding-top: 12px; border-top: 2px solid #e2e8f0; font-weight: bold; }
+.empty-cart { color: #777; }
+.checkout-button { width: 100%; margin-top: 20px; padding: 12px; border: 0; border-radius: 6px; background: #25d366; color: #fff; cursor: pointer; font-size: 1rem; }
+.checkout-button:disabled { background: #aaa; cursor: not-allowed; }
+
+
+
+/* mobile header */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #2c3e50;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .sections {
+    width: 100%;
+    order: 4;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease, visibility 0s linear 0.3s;
+  }
+  .sections.active {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+  }
+  .sections ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 12px;
+  }
+}
+
+
+/* --- تعديلات الشاشات الصغيرة (الموبايل) فقط --- */
+@media screen and (max-width: 768px) {
+
+  /* --- الهيدر الموبايل: ثبات اللي فوق وتوسيع المسافة للي تحت --- */
+  header, #header-placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    direction: rtl;
+  }
+
+  /* نضمن إن كل عناصر الهيدر تاخد راحتها وتتوزع صح */
+  header > * {
+    margin-bottom: 5px;
+  }
+
+  /* إجبار زرار السلة وزرار "تواصل معنا" إنهم ينزلوا سطر لوحدهم تحت ويكونوا قصاد بعض بمسافة مريحة */
+  header .cart, header .cart-btn, header button.cart,
+  header .whatsapp, header .contact-btn, header button.contact {
+    margin-top: 15px; /* دي المسافة اللي هتخليهم ينزلوا لتحت ويبعدوا عن اللوجو والاسم */
+  }
+
+  /* 1. تنسيق قسم الـ landing عشان نجمع العناصر ونخلي الزرار في النص */
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* بيخلي كل اللي جوه الـ landing (الكلام والزرار) في النص بالمللي */
+    text-align: center;
+  }
+
+  /* 2. ضبط محتوى الـ content لو محتاج تسنتر أو تظبط مسافته */
+  .landing .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* 3. زر "اكتشف بنفسك" يتسنتر تماماً في المنتصف */
+  .landing .discover-btn {
+    display: block !important;
+    margin: 80px 0 25px 40px !important; /* بتخليه في النص ومسافة من فوق ومن تحت */
+    float: none !important;
+    white-space: nowrap;
+  }
+
+  /* 4. إنزال صندوق الـ about (الذي يحتوي على النص الطويل) لتحت بمسافة واضحة */
+  .about {
+    margin-top: 80px 0 20px 30px !important; /* زودي الرقم ده لو عايزة تنزليه أكتر لتحت */
+    text-align: center;
+  }
+}
+
+/* منع خروج أي عنصر عن حدود الشاشة وثبات الموقع تماماً */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+/* product-slider*/
+
+.product-slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.slider-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slider-images img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slider-images img.active-img {
+  opacity: 1;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider-dots .dot.active-dot {
+  background-color: #ffffff;
+  width: 18px;
+  border-radius: 4px;
+}

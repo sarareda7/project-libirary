@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>project-libirary</title>
+  </head>
+  <body dir="rtl">
+    <div id="header-placeholder"></div>
+
+    <div class="landing">
+      <!-- <img src="images/libirary/bannar.jpg" alt="bannar" /> -->
+      <div class="content">
+        <p>
+          شعارنا الثقة والامانة... عالمنا المتكامل من الأدوات<br />
+          بانتظارك.
+        </p>
+        <button class="discover-btn">اكتشف بنفسك</button>
+      </div>
+    </div>
+    <div class="about">
+      <p>
+        نحن نقدم كافة المستلزمات المدرسية،والهدايا المتميزة،ألعاب الأطفال،زينة
+        الحفلات،بالأضافة الى قسم خاص للهاند ميد وخدمات الطباعة الفورية لتلبية
+        جميع احتياجاتكم بأسعار مناسبة."
+      </p>
+    </div>
+    <div class="all-sections">
+      <h2>أقسام المكتبة الرئيسية</h2>
+
+      <a href="school-tools.html">
+        <div class="box">
+          <h3>الأدوات المدرسية</h3>
+          <img src="images/libirary/school.jpg" alt="school" />
+        </div>
+      </a>
+
+      <a href="gifts-toys.html">
+        <div class="box">
+          <h3>الهدايا واللعب</h3>
+          <img src="images/libirary/gifts.jpg" alt="gift" />
+        </div>
+      </a>
+
+      <a href="party.html">
+        <div class="box">
+          <h3>أعياد الميلاد والحفلات</h3>
+          <img src="images/libirary/party.jpg" alt="school" />
+        </div>
+      </a>
+
+      <a href="files.html">
+        <div class="box">
+          <h3>المستلزمات المكتبية</h3>
+          <img src="images/libirary/files.jpg" alt="school" />
+        </div>
+      </a>
+
+      <a href="books.html">
+        <div class="box">
+          <h3>كتب التأسيس وخدمات المكتبة</h3>
+          <img src="images/libirary/books.jpg" alt="school" />
+        </div>
+      </a>
+
+      <a href="handmade.html">
+        <div class="box">
+          <h3>هاند ميد</h3>
+          <img src="images/libirary/handmade.jpg" alt="school" />
+        </div>
+      </a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
