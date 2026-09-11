@@ -1,85 +1,85 @@
 [
   {
     "image": "images/libirary/files/2.jpg",
-    "title": "",
-    "price": "",
+    "title": "مسدس شمع",
+    "price": "7 جنية",
     "description": "",
     "id": 150
   },
   {
     "image": "images/libirary/files/3.jpg",
-    "title": "",
-    "price": "",
+    "title": "قائمة عروسة",
+    "price": "25 جنية",
     "description": "",
     "id": 151
   },
   {
     "image": "images/libirary/files/4.jpg",
-    "title": "",
-    "price": "",
+    "title": "جزء عم",
+    "price": "7 جنية",
     "description": "",
     "id": 152
   },
   {
     "image": "images/libirary/files/5.jpg",
-    "title": "",
-    "price": "",
+    "title": "ربع يس",
+    "price": "30 جنية",
     "description": "",
     "id": 153
   },
   {
     "image": "images/libirary/files/6.jpg",
-    "title": "",
-    "price": "",
+    "title": "ماكينة حلاقة ماكس",
+    "price": "200 جنية",
     "description": "",
     "id": 154
   },
   {
     "image": "images/libirary/files/7.jpg",
-    "title": "",
-    "price": "",
+    "title": "صب",
+    "price": "220 جنية",
     "description": "",
     "id": 155
   },
   {
     "image": "images/libirary/files/8.jpg",
-    "title": "",
-    "price": "",
+    "title": "صب",
+    "price": "280 جنية",
     "description": "",
     "id": 156
   },
   {
     "image": "images/libirary/files/9.jpg",
-    "title": "",
-    "price": "",
+    "title": "ماكينة حلاقة كوبرا",
+    "price": "450 جنية",
     "description": "",
     "id": 157
   },
   {
     "image": "images/libirary/files/10.jpg",
-    "title": "",
-    "price": "",
+    "title": "دوسية",
+    "price": "12 جنية",
     "description": "",
     "id": 158
   },
   {
     "image": "images/libirary/files/11.jpg",
-    "title": "",
-    "price": "",
+    "title": "دوسية سوستة صغير",
+    "price": "20جنية",
     "description": "",
     "id": 159
   },
   {
     "image": "images/libirary/files/12.jpg",
-    "title": "",
-    "price": "",
+    "title": "دوسية سوستو كبير",
+    "price": "25 جنية",
     "description": "",
     "id": 160
   },
   {
     "image": "images/libirary/files/13.jpg",
     "title": "دوسيه أبيض ",
-    "price": "",
+    "price": "6 جنية",
     "description": "",
     "id": 161
   },
@@ -92,57 +92,29 @@
   },
   {
     "image": "images/libirary/files/15.jpg",
-    "title": "",
-    "price": "",
+    "title": "دباسة كبيرة",
+    "price": "95 جنية",
     "description": "",
     "id": 163
   },
   {
-    "image": "images/libirary/files/16.jpg",
-    "title": "",
-    "price": "",
-    "description": "",
-    "id": 164
-  },
-  {
     "image": "images/libirary/files/17.jpg",
-    "title": "",
-    "price": "",
-    "description": "",
+    "title": "دبابيس",
+    "price": "حسب الحجم",
+    "description": "يوجد أحجام مختلفة",
     "id": 165
   },
   {
     "image": "images/libirary/files/18.jpg",
-    "title": "",
-    "price": "",
+    "title": "دباسة صغيرة",
+    "price": "45 جنية",
     "description": "",
     "id": 166
   },
   {
-    "image": "images/libirary/files/19.jpg",
-    "title": "",
-    "price": "",
-    "description": "",
-    "id": 167
-  },
-  {
     "image": "images/libirary/files/20.jpg",
-    "title": "",
-    "price": "",
-    "description": "",
-    "id": 168
-  },
-  {
-    "image": "images/libirary/files/21.jpg",
-    "title": "",
-    "price": "",
-    "description": "",
-    "id": 169
-  },
-  {
-    "image": "images/libirary/files/22.jpg",
-    "title": "",
-    "price": "",
+    "title": "دباسة  متوسطة",
+    "price": "90 جنية",
     "description": "",
     "id": 170
   },

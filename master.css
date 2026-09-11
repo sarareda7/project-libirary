@@ -45,6 +45,7 @@ header .sections ul li {
 header .sections ul li a {
   color: #475569;
   text-decoration: none;
+  white-space: nowrap;
 }
 header .sections ul li::after {
   content: '';
@@ -183,6 +184,9 @@ header .chat-us:hover {
   text-align: center;
   border-top: 4px solid #2563eb;
   transition: tranform 0.3s ease, box-shadow 0.3s ease;
+}
+.all-sections a {
+  text-decoration: none;
 }
 .all-sections .box:hover {
   transform: translateY(-8px);
@@ -474,7 +478,7 @@ footer {
   /* 3. زر "اكتشف بنفسك" يتسنتر تماماً في المنتصف */
   .landing .discover-btn {
     display: block !important;
-    margin: 80px 0 25px 40px !important; /* بتخليه في النص ومسافة من فوق ومن تحت */
+    margin: 30px 0 0px 70px !important; /* بتخليه في النص ومسافة من فوق ومن تحت */
     float: none !important;
     white-space: nowrap;
   }
